@@ -1,0 +1,91 @@
+/*Css reset rule*/
+body,
+header,
+nav,
+footer,
+main,
+h1,
+img,
+h3 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*Style rule for Body and image*/
+.body{
+    background-color: #e3eaf8;
+}
+
+.img{
+    max-width: 100%;
+    display: block;
+}
+
+/*Style Rule for header content*/
+h1 :first-child{
+    text-align: center;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3%;
+    color: #101a2d;
+}
+
+/*Style rule for navigation area*/
+nav, nav ul, nav li{
+    background-color: #1d396d;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+}
+
+.nav li a{
+    display: block;
+    color: #e3eaf8;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Styles for main */
+main, main p{
+padding: 2%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1.25em;
+padding-top: 2%;
+}
+
+main h3{
+padding-top: 2%;
+
+}
+.external-selectors{
+width: 45%;
+float: right;
+}
+
+#external{
+    color: #1d396d;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Style Rule for Footer content*/
+footer, footer a{
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #1d396d;
+    color:#e3eaf8;
+    pad: 1% 0%;
+}
+
+footer a{
+    color: #e3eaf8;
+    text-decoration: none;
+}
+
