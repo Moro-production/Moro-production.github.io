@@ -1,3 +1,184 @@
-body{
+/*
+Author: Hayden
+Date: 9/10/2024
+*/
+/* css Reset */
+body,
+header,
+nav,
+footer,
+main,
+h1,
+div,
+img,
+ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*style rule for budy and imgs*/
+body {
 	background-color: #ccc;
 }
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Style rules for mobile view port*/
+
+
+/*style rules for the header*/
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	height: 190px;
+}
+
+header img {
+	margin: 0 auto;
+
+}
+
+/* style rules for navigation*/
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+	background-color: #000;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+	border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+
+/*Show Mobile class, hid desktop class*/
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+
+}
+
+/* Style rules for Main*/
+
+main {
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Roboto slab' serif;
+}
+
+.tel-link {
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block
+}
+
+.hours{
+	margin-left:10%;
+}
+
+.action {
+	font-size: 1.35em;
+	color: #660;
+	font-weight: bold;
+}
+
+#weights,
+#cardio,
+#equip {
+	margin: 0 2%;
+}
+
+.round{
+	border-radius: 8px;
+}
+
+.external-link {
+	color: #660;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.contact-email-link{
+	color: #660;
+	text-decoration: none;
+}
+
+#contact a {
+	color: #660;
+	text-decoration: none;
+}
+
+.map {
+	border: 2px soild #000;
+	width: 95%;
+	height: 50%;
+}
+
+/* Footer style rules*/
+footer p {
+	font-size: .75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*
+#exercise {
+	clear: left;
+	border-top: 1px soild #000;
+	border-bottom: 1px soild #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+
+}
+
+#exercise dt {
+	font-weight: bold;
+}
+
+#exercise dd {
+	padding: .5% 1% 2% 0;
+}
+*/
