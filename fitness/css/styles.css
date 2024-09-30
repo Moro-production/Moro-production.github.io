@@ -109,8 +109,8 @@ main {
 	display: block
 }
 
-.hours{
-	margin-left:10%;
+.hours {
+	margin-left: 10%;
 }
 
 .action {
@@ -125,7 +125,7 @@ main {
 	margin: 0 2%;
 }
 
-.round{
+.round {
 	border-radius: 8px;
 }
 
@@ -135,7 +135,7 @@ main {
 	text-decoration: none;
 }
 
-.contact-email-link{
+.contact-email-link {
 	color: #660;
 	text-decoration: none;
 }
@@ -164,21 +164,128 @@ footer p a {
 	text-decoration: none;
 }
 
-/*
-#exercise {
-	clear: left;
-	border-top: 1px soild #000;
-	border-bottom: 1px soild #000;
-	background-color: #f2f2f2;
-	padding: 1% 2%;
+/*Media Query for Tablet Viewport*/
 
+@media screen and (min-width:630px) {
+	.mobile {
+		display: none;
+	}
+
+	.tablet-desktop {
+		display: block;
+	}
+
+	header {
+		position: static;
+		padding-bottom: 2%;
+	}
+
+	nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px soild #fff;
+	}
+
+	nav li:last-child {
+		border-right: none;
+	}
+
+	nav li a {
+		padding: .1em .75em;
+	}
+
+	main ul {
+		margin: 0 0 4%
+	}
+
+
+	#exercise {
+		clear: left;
+		border-top: 1px soild #000;
+		border-bottom: 1px soild #000;
+		background: linear-gradient(to right, #ccc,#fff);
+		background-color: #f2f2f2;
+		padding: 1% 2%;
+
+	}
+
+	#exercise dt {
+		font-weight: bold;
+	}
+
+	#exercise dd {
+		padding: .5% 1% 2% 0;
+	}
+.tel-num{
+	font-size:1.25em;
 }
 
-#exercise dt {
-	font-weight: bold;
+.map{
+	width:600px;
+	height:450px;
+}
+}
+/*Desktop*/
+
+@media screen and (min-width:1015px), print{
+	header{
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+
+	nav{
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+
+	nav ul{
+		text-align: right;
+	}
+
+	nav li{
+		border: none;
+	}
+	
+	nav li a {
+		padding: .5em 1em;
+	}
+
+	nav li a:hover{
+		color: #000;
+		background-color: #fff;
+	}
+
+	main{
+		clear: left;
+	}
+
+	main h1{
+		font-size:1.8em;
+	}
+
+	#weights,#cardio,#traing{
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+	}
+
+	#exercises{
+		 clear: left;}
+}
+/*large media quarry large veiwport*/
+@media screen and(min-width:1921px),print {
+#container{
+	width: 1920px;
+	margin: 0 auto;
+}
 }
 
-#exercise dd {
-	padding: .5% 1% 2% 0;
+/*media for print*/
+@media print{
+	body{
+		background-color: #fff;
+		color: #000;
+	}
 }
-*/
