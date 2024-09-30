@@ -11,7 +11,12 @@ main,
 h1,
 div,
 img,
-ul {
+ul,
+figure,
+figcaption,
+article,
+aside,
+section {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -27,13 +32,16 @@ img {
 	display: block;
 }
 
+/* Style rule fo box sizing applies to all elements*/
+* {
+	box-sizing: border-box;
+}
+
 /* Style rules for mobile view port*/
 
 
 /*style rules for the header*/
 header {
-	position: -webkit-sticky;
-	position: sticky;
 	top: 0;
 	background-color: #000;
 	height: 190px;
@@ -93,6 +101,31 @@ main {
 	font-family: 'Roboto slab' serif;
 }
 
+.mobile h3 {
+	text-shadow: 5px 5px 8px #ccc;
+}
+
+article {
+	padding: 2%;
+
+}
+
+article h3 {
+	text-align: center;
+}
+
+article img {
+	margin: 0 auto;
+}
+
+article ul {
+	margin-left: 10%;
+}
+
+article:nth-of-type(2) {
+	background-color: rgb(204, 204, 204, 0.3);
+}
+
 .tel-link {
 	background-color: #404040;
 	padding: 2%;
@@ -117,6 +150,38 @@ main {
 	font-size: 1.35em;
 	color: #660;
 	font-weight: bold;
+	text-shadow: 5px 5px 8px #ccc;
+}
+
+.frame {
+	position: relative;
+	max-width: 450px;
+	margin: 2%, auto;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0.5);
+	color: #fff;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	font-family: verdana, arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+aside {
+	text-align: center;
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: bold;
+	padding: 2%;
+	background-color: rgb(204, 204, 204, 0.5);
+	box-shadow: 5px 5px 8px #000;
+	text-shadow: 5px 5px 5px #b3b3b3b3;
+	border-radius: 0 15px;
 }
 
 #weights,
@@ -176,7 +241,6 @@ footer p a {
 	}
 
 	header {
-		position: static;
 		padding-bottom: 2%;
 	}
 
@@ -198,12 +262,27 @@ footer p a {
 		margin: 0 0 4%
 	}
 
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+
+	.grid-item4 {
+		grid-column: 1 / span 3;
+	}
+
+	.pic-text {
+		font-size: 1em;
+		padding: 10px;
+	}
+
 
 	#exercise {
 		clear: left;
 		border-top: 1px soild #000;
 		border-bottom: 1px soild #000;
-		background: linear-gradient(to right, #ccc,#fff);
+		background: linear-gradient(to right, #ccc, #fff);
 		background-color: #f2f2f2;
 		padding: 1% 2%;
 
@@ -216,75 +295,102 @@ footer p a {
 	#exercise dd {
 		padding: .5% 1% 2% 0;
 	}
-.tel-num{
-	font-size:1.25em;
+
+	.tel-num {
+		font-size: 1.25em;
+	}
+
+	.map {
+		width: 600px;
+		height: 450px;
+	}
 }
 
-.map{
-	width:600px;
-	height:450px;
-}
-}
 /*Desktop*/
 
-@media screen and (min-width:1015px), print{
-	header{
+@media screen and (min-width:1015px),
+print {
+	header {
 		width: 25%;
 		float: left;
 		padding-bottom: 0;
 	}
 
-	nav{
+	nav {
 		float: right;
 		width: 70%;
 		margin: 4em 1em 0 0;
 	}
 
-	nav ul{
+	nav ul {
 		text-align: right;
 	}
 
-	nav li{
+	nav li {
 		border: none;
 	}
-	
+
 	nav li a {
 		padding: .5em 1em;
 	}
 
-	nav li a:hover{
+	nav li a:hover {
 		color: #000;
 		background-color: #fff;
 	}
 
-	main{
+	main {
 		clear: left;
 	}
 
-	main h1{
-		font-size:1.8em;
+	main h1 {
+		font-size: 1.8em;
 	}
 
-	#weights,#cardio,#traing{
+	articale h3 {
+		font-size: 1.75em;
+	}
+
+	.pic-text {
+		font-size: 1.5em;
+		padding: 20PX;
+	}
+
+	.frame {
+		opacity: 0.9;
+	}
+
+	.frame:hover {
+		opacity: 1;
+		box-shadow: 8px 8px 10px #808080;
+	}
+
+
+	#weights,
+	#cardio,
+	#traing {
 		width: 29%;
 		float: left;
 		margin: 0 2%;
 	}
 
-	#exercises{
-		 clear: left;}
+	#exercises {
+		clear: left;
+	}
 }
+
 /*large media quarry large veiwport*/
-@media screen and(min-width:1921px),print {
-#container{
-	width: 1920px;
-	margin: 0 auto;
-}
+@media screen and(min-width:1921px),
+print {
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
 }
 
 /*media for print*/
-@media print{
-	body{
+@media print {
+	body {
 		background-color: #fff;
 		color: #000;
 	}
